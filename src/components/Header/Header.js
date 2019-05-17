@@ -19,10 +19,16 @@ class Header extends Component {
 
     submitHandler = (event) => {
         event.preventDefault();
-        if(this.props.location !== '/') {
+
+        if (this.props.location !== '/') {
             this.props.history.push('/');
         }
-        this.props.initArtistSearch(this.state.searchValue)
+
+        if (this.state.searchValue) {
+            this.props.initArtistSearch(this.state.searchValue);
+        } else {
+            this.props.showArtistsHandler();
+        }
     };
 
     render() {
@@ -40,9 +46,8 @@ class Header extends Component {
                                     aria-label="search"
                                     placeholder="Search..."
                                     value={this.state.searchValue}
-                                    onChange={(event) => {
-                                        this.inputChangedHandler(event)
-                                    }}/>
+                                    onChange={(event) => {this.inputChangedHandler(event)}}
+                                    onBlur={(event) => {this.submitHandler(event)}}/>
                             </div>
                         </form>
                     </div>
