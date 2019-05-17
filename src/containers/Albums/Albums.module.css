@@ -1,0 +1,45 @@
+.AlbumsContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+}
+
+.Subheading {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.SelectWrapper {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.AlbumsSelector {
+    box-sizing: border-box;
+    width: 55px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media (min-width: 375px) {
+    .AlbumsContainer {
+        width: 360px;
+    }
+}
+
+@media (min-width: 570px) {
+    .AlbumsContainer {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .AlbumsContainer {
+        width: 720px;
+    }
+}

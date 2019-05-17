@@ -1,0 +1,82 @@
+.Header {
+    height: 56px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    box-sizing: border-box;
+}
+
+.HeaderContainer {
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HomeLink {
+    flex-shrink: 0;
+    padding: 11px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    color: #4d4f5c;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.HomeLink:hover {
+    box-shadow: 0 2px 3px #ccc;
+}
+
+.SearchForm {
+    height: 80%;
+    flex: 0 1 300px;
+    margin-left: 15px;
+}
+
+.SearchField {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.SearchField:before {
+    content: '';
+    background: url('../../assets/icons/search-icon.svg') no-repeat left center / contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+}
+
+.SearchField input {
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 33px;
+    box-sizing: border-box;
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.SearchField input:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12),
+    0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+    .Header {
+        padding: 0 30px;
+    }
+}

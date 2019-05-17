@@ -1,0 +1,51 @@
+.ArtistInfoContainer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.ArtistInfoImage {
+    width: 250px;
+}
+
+.AlbumsLink {
+    display: inline-block;
+    padding: 9px 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    background-color: #b90000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ArtistInfoBio {
+    color: #4d4f5c;
+    line-height: 1.4;
+}
+
+.ArtistInfoContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (min-width: 600px) {
+    .ArtistInfoImage {
+        margin: 0 20px 10px 0;
+        float: left;
+    }
+
+    .AlbumsLink {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .ArtistInfoContainer {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
