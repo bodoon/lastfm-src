@@ -38,16 +38,13 @@ class Header extends Component {
                         <Link to="/" onClick={this.props.showArtistsHandler} className={classes.HomeLink}>Top Artists</Link>
                         <form
                             className={classes.SearchForm}
-                            onSubmit={(event) => {
-                                this.submitHandler(event)
-                            }}>
+                            onSubmit={(event) => { this.submitHandler(event) }}>
                             <div role="search" className={classes.SearchField}>
                                 <input
                                     aria-label="search"
                                     placeholder="Search..."
                                     value={this.state.searchValue}
-                                    onChange={(event) => {this.inputChangedHandler(event)}}
-                                    onBlur={(event) => {this.submitHandler(event)}}/>
+                                    onChange={(event) => {this.inputChangedHandler(event)}}/>
                             </div>
                         </form>
                     </div>
