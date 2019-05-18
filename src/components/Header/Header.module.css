@@ -9,6 +9,8 @@
     border: 1px solid #eee;
     box-shadow: 0 2px 3px #ccc;
     box-sizing: border-box;
+    /*Firefox and Edge height fix*/
+    flex-shrink: 0;
 }
 
 .HeaderContainer {
