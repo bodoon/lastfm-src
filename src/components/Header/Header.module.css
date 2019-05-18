@@ -12,7 +12,7 @@
 }
 
 .HeaderContainer {
-    max-width: 900px;
+    max-width: 1200px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -80,3 +80,4 @@
         padding: 0 30px;
     }
 }
+

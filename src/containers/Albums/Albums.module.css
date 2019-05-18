@@ -43,3 +43,9 @@
         width: 720px;
     }
 }
+
+@media (min-width: 1200px) {
+    .AlbumsContainer {
+        width: 900px;
+    }
+}

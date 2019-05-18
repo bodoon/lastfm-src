@@ -27,3 +27,9 @@
         width: 720px;
     }
 }
+
+@media (min-width: 1200px) {
+    .ArtistsContainer {
+        width: 900px;
+    }
+}

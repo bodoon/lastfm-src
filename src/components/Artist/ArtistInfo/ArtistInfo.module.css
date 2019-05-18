@@ -49,3 +49,9 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .ArtistInfoContainer {
+        max-width: 900px;
+    }
+}
+
