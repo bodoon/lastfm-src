@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 import classes from './Artists.module.css';
-import Artist from '../../components/Artist/Artist';
+import Card from '../../components/Card/Card';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import * as actions from '../../store/actions/actions';
 import artistPlaceholder from '../../assets/img/artist-placeholder.jpg';
@@ -16,7 +16,11 @@ class Artists extends Component {
     render() {
 
         let artists = this.props.loading ? <Spinner/> : this.props.artists.map((artist) => {
-            return <Artist key={artist.id} src={artist.src ? artist.src : artistPlaceholder} name={artist.name}/>
+            return <Card
+                key={artist.id}
+                src={artist.src ? artist.src : artistPlaceholder}
+                title={artist.name}
+                clicked={() => {this.props.initArtistSearch(artist.name)}}/>
         });
 
         return (
